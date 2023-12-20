@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Наше оборудование</title>
+</head>
+
+<body>
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="pics/Логотип.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="pics/Group.png" alt="">
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-top">
+                    <li class="nav-item dropdown cities">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Москва
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                            <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="mediaLinks">
+                            <li>
+                                <a href="">
+                                    <img src="pics/Вконтакте.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ватс ап.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ютуб.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Телеграм.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="info">
+                            <div class="phone">+7 (495) 649-62-46</div>
+                            Мы на связи с 9:00 до 19:00
+                        </div>
+                    </li>
+                    <!-- Заказать звонок -->
+                    <li class="nav-item">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Заказать звонок</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title BackCall" id="exampleModalLabel">Обратный звонок</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Телефон</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                            конфиденциальности и даете согласие на обработку своих персональных
+                                            данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bottom">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Наше оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Видео
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Нововсти
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Заголовок -->
+    <div class="whatWeDo">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="my-4">Чем мы работаем в <span>Москве</span>?</h1>
+                </div>
+                <div class="col">
+                    Для максимально качественного выполнения работ нам нужны не только Золотые руки, но и лучшая техника
+                    и лучшее оборудование! Итак, вот чем мы работаем:
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Наше оборудование -->
+    <div class="ourEquipment">
+        <div class="container">
+            <h2 class="text-center my-4">Наше <span>оборудование</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/SANTOEMA SABRINA HOT.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>SANTOEMA SABRINA HOT</span> - лучший в своем классе! Экстрактор имеет небольшие
+                            размеры и идеально
+                            подходит для чистки небольших площадей - чистка диванов, матрасов и ковров на дому. Среди
+                            тех, кто продается на Российском рынке - у него самая большая сила всасывания! Это
+                            экстрактор позволяющий удалить загрязнения оттуда, куда не достанет любой другой экстрактор
+                            (даже Кёрхер и тем более Кирби). Сила всасывания 3000мм.вод.столба и подогрев раствора -
+                            делают этот экстарктор лучшим! Для сравнения у Кёрхера сила всасывания 2200 мм.вод.столба, а
+                            у Кирби - 660 мм.вод.столба.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/SANTOEMA SABRINA MAXI.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>SANTOEMA SABRINA MAXI</span> - Этот аппарат имеет такие же показатели как и у santoema
+                            sabrina hot,
+                            с одним лиш отличием - у него баки для грязной и чистой воды больше в 3 раза, что делает его
+                            идеальным для быстрой чистки без потери качества больших площадей, таких как офисные здания,
+                            кинотеатры, гостиницы, рестораны и др.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Размывачная машина Numatic NuPower NPR1515.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span> Размывачная машина Numatic NuPower NPR1515</span> - это роторная размывочная машина
+                            для
+                            шампунирования ковролинов. Диаметр 450мм. позволяет осуществлять чистку ковров и ковролинов
+                            с максимальной скоростью! Однако эта машина требует опытного оператора. Работать на ней не
+                            так просто!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Паропылесос Delvir VULCAN INOX.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Паропылесос Delvir VULCAN INOX </span> - это мощьный парогенератор и пылесос в одном
+                            лице. Он может
+                            упростить множество задач! Удаление въевшихся пятен, чистка штор, мойка стекол, чистка
+                            твердых полов и межплиточных швов, чистка кухни и многое другое! Парогенератор - это
+                            многофункциональный аппарат который должен быть в любой компании. Это как символ качества.
+                            Если он есть - то фирма знает что делет, если его нет - то фирма неопытная или не заботится
+                            о качестве.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Вертикальный пылесос Sebo .png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Вертикальный пылесос Sebo</span> - ни одна серьезная фирма по чистке ковров и
+                            ковролинов не
+                            обойдется без вертикального пылесоса. Если чистка ковра или ковролина осуществляется без
+                            применения вертикального пылесоса - это непрофессионально!!!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Фен для сушки ковров Bloower-220 .png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Фен для сушки ковров Bloower-220</span> - отличный помошник, когда нужно быстро
+                            высушить ковровое
+                            покрытие или мягкую мебель!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Наша химия -->
+    <div class="ourChemicals">
+        <div class="container">
+            <h2 class="text-center my-4">Наша <span>химия</span></h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Powdered Formula 90 .png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Powdered Formula 90</span> - Удаляет грязь по всей глубине ворса с синтетических и
+                            натуральных
+                            волокон. Не оказывает разрушающего воздействия на текстильные красители. Разрешено для
+                            применения на шерсти. Смачивает поверхность, проникая глубоко во все ее неровности и поры,
+                            освежает и усиливает цвет, замедляет последующее загрязнение.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/LiquidFormula90.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Formula 90 Liquid</span> - Идеальное средство для ЭКСТРАКТОРНОЙ чистки. Удаляет грязь
+                            по всей
+                            глубине ворса с синтетических и натуральных волокон. Не оказывает разрушающего воздействия
+                            на текстильные красители. Разрешено для применения на шерсти.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/enz_all_full_10 1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Enz-All</span> - Порошковый энзимный пре-спрей (опрыскиватель для предварительной
+                            обработки),
+                            содержащий ЭНЗИМЫ - активные белки, расщепляющие органические соединения. Одно из самых
+                            сильных средств для предварительной обработки на рынке! Специально разработан для борьбы с
+                            сильнейшими белковыми, въевшимися загрязнениями. Эффективно удаляет кровь, рвоту, траву и
+                            пищевые пятна с ковра.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/browning_treatment_1gal_full_10 1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Browning Treatment/Coffee Stain Remover</span> - Готовое к применению эффективное
+                            средство для
+                            выведения пятен кофе, дубильных веществ и красителей, оказывает воздействие на свежие и
+                            застарелые пятна. Превосходно удаляет потемнение обивки и ковра, связанное с
+                            переувлажнением.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/spray_n_go_1-removebg-preview 1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Spray-N-Go</span> - Порошковое средство, специально предназначенное для удаления
+                            застарелых пятен
+                            кофе, чая, соды, губной помады, гуталина и др. В зависимости от уровня и давности
+                            загрязнения может меняться концентрация готового раствора. Перед применением проверьте
+                            поверхность на стойкость красителей на незаметном месте.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/urine_contamination_treatment_full_20 1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Urine Contamination Treatment</span> - Нейтрализует сильный запах мочи и других
+                            стойких запахов на
+                            коврах, обивке и твердых поверхностях. Помимо ковров и обивки позволяет устранять запах даже
+                            с плитки, цемента, деревянных полов и других твердых поверхностей. Средство может быть
+                            нанесено как тряпкой, так и спреем. После применения остается приятный запах свежести и
+                            цветов.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Leather Cleaner & Conditioner.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>Leather Cleaner & Conditioner</span> - Специальное средство для ухода за обивкой из
+                            натуральной и
+                            синтетической КОЖИ. Позволяет восполнить потерю натуральных масел и надолго сохраняет
+                            привлекательный внешний вид изделия. Кожа остается чистой, мягкой и эластичной без
+                            маслянистого остатка.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center EquipmentCard">
+                        <div class="card-img-top">
+                            <img src="pics/Paint_Oil_Grease_Remover_1qt_EU_Full_10-1 1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <span>P.O.G. Remover</span> -универсальный жидкий пятновыводитель. Эффективно удаляет жирные
+                            пятна,
+                            масляные пятна, краску, жвачку, клей и др.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Также используемые компании -->
+    <div class="companies">
+        <div class="container">
+            <div class="col">
+                А так же мы используем различные пятновыводители и химию для уборки таких фирм как: <br>
+                CHEMSPEK, BUTCHERS, ХИМИТЕК, PROCHEM, KIEHL.
+              </div>
+            <div class="block">
+                <div class="item">
+                    <img src="pics/ChemspecLogo_NewLook_4cp 1.png" alt="CHEMSPEC logo">
+                </div>
+                <div class="item">
+                    <img src="pics/prochem 1.png" alt="BUTCHERS logo">
+                </div>
+                <div class="item">
+                    <img src="pics/Butchers.png" alt="XIMITEK logo">
+                </div>
+                <div class="item">
+                    <img src="pics/KIEHL_LOGO 1.png" alt="PROCHEM logo">
+                </div>
+                <div class="item">
+                    <img src="pics/himtech.png" alt="KIEHL logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ура футекр -->
+    <div class="footer">
+        <div class="container">
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <img src="pics/Логотип.svg" alt="">
+                            </div>
+                            <p>+7 (495) 649-62-46</p>
+                            <p>doc@himdivan.ru для документов</p>
+                            <p>info@himdivan.ru для фото</p>
+                        </div>
+                        <div class="col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li>Химчистка мебели</li>
+                                <li>Химчистка ковровых покрытий</li>
+                                <li>Клининговые услуги</li>
+                                <li>Специальные работы</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Цены</h5>
+                            <ul>
+                                <li>Наше оборудование</li>
+                                <li>Видео</li>
+                                <li>Новости</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Отзывы</h5>
+                            <ul>
+                                <li>Обучение</li>
+                                <li>Франшиза</li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Социальные сети</h5>
+                            <ul class="mediaLinks">
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Вконтакте.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ватс ап.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ютуб.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Телеграм.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

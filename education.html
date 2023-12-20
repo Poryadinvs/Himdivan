@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Обучение</title>
+</head>
+
+<body>
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="pics/Логотип.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="pics/Group.png" alt="">
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-top">
+                    <li class="nav-item dropdown cities">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Москва
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                            <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="mediaLinks">
+                            <li>
+                                <a href="">
+                                    <img src="pics/Вконтакте.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ватс ап.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ютуб.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Телеграм.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="info">
+                            <div class="phone">+7 (495) 649-62-46</div>
+                            Мы на связи с 9:00 до 19:00
+                        </div>
+                    </li>
+                    <!-- Заказать звонок -->
+                    <li class="nav-item">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Заказать звонок</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title BackCall" id="exampleModalLabel">Обратный звонок</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Телефон</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                            конфиденциальности и даете согласие на обработку своих персональных
+                                            данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bottom">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">
+                            Наше оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Видео
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Нововсти
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Заголовок -->
+    <div class="EducationForCleaning">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-over-cards">
+                        <span>Обучение </span>для клиниговых компаний
+                    </p>
+                    <p class="titleText">Компания «Химдиван» является официальным представителем Международного
+                        Консалтингового Центра
+                        Тараса Дударя в Центральной России.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="cleanPic">
+                        <img src="pics/cleanPic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Про Тараса -->
+    <div class="aboutTaras">
+        <div class="container text-center">
+            <div class="row mt-5">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="pics/TarasPic.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row textRow mt-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-text">
+                            <span>Тарас Дударь</span> – признанный эксперт в области чистоты и гигиены. На его счету
+                            организация и
+                            проведение сотен семинаров и конференций в области клининга по всей России. Семинары по
+                            организации работы клининговых компаний и технологиям чистки сложных загрязнений успешно
+                            проходят в Москве, Санкт-Петербурге, Екатеринбурге, Краснодаре, Нижнем Новгороде, Киеве и
+                            Минске.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-text">
+                            Тарас Дударь – автор уникальной образовательной программы «Чистомания», которая является
+                            главным пособием для начинающих клининговых бригад и профессиональных компаний.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Приглашение -->
+    <div class="invitation">
+        <div class="container">
+            <h2 class="text-center my-4"> <span>"Химдиванй"</span> приглашает на семинары</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card invitationCard">
+                        <div class="card-text">
+                            Представитель Тараса Дударя компания «Химдиван» во главе с директором компании
+                            <span>Максимом Сиденко</span> является постоянным участником в образовательных мероприятиях
+                            в качестве эксперта и организатором конференций и семинаров по технологиям в клининговом
+                            бизнесе в Центральной России.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card invitationCard">
+                        <div class="card-text">
+                            Мы смело можем завить, что знаем о чистоте все! И мы готовы поделиться своим опытом и
+                            знаниями с Вами! <br>
+                            Приглашаем новичков клининговой отрасли и сотрудников клининговых компаний, желающих поднять
+                            свой профессиональный уровень на наши семинары.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Расписание -->
+            <div class="text-center fw-bold w-50 schedulesTitle mt-3">На наших образовательных мероприятиях Вы узнаете о
+                новинках в клининговой индустрии,
+                правилах и секретах успешной работы в этом бизнесе:
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Основы чистки наполненных покрытий</div>
+                        <div class="card-title">/01</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Технологии удаления пятен с мягкой мебели и домашнего текстиля</div>
+                        <div class="card-title">/02</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Правила подбора оборудования и чистящих средств</div>
+                        <div class="card-title">/03</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Разнообразие технологий чистки</div>
+                        <div class="card-title">/04</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Современные технологии по удалению сложных пятен</div>
+                        <div class="card-title">/05</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Способы идентификации пятнообразующих веществ</div>
+                        <div class="card-title">/06</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Техническое оснащение для удаления пятен</div>
+                        <div class="card-title">/07</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Секреты организации успешной клининговой компании</div>
+                        <div class="card-title">/08</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card datCard">
+                        <div class="card-text">Распространенные ошибки и пути их предотвращения</div>
+                        <div class="card-title">/09</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Карусель -->
+            <div class="text-center fw-bold w-50 schedulesTitle mt-3">Ждем вас на своих семинарах. Мы делимся не только
+                полезной информацией, но и хорошим настроением :)
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 650px; margin: auto;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pics/kovrolin_exstractor-rotor-2 2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pics/kovrolin_extractor-1 2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pics/kovrolin_rotor-2 2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Карточка Максима -->
+    <div class="MaksimsCard">
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col">
+                        <img src="pics/MaximPic.png" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            По вопросам оплаты и участия, обращайтесь к представителю Центра Тараса Дударя в Центральной
+                            России, <span>Максиму Сиденко</span> (компания «ХимДиван»)
+                        </div>
+                        <div class="phoneNum">
+                            +7 (926) 272 73 13
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ура футекр -->
+    <div class="footer">
+        <div class="container">
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <img src="pics/Логотип.svg" alt="">
+                            </div>
+                            <p>+7 (495) 649-62-46</p>
+                            <p>doc@himdivan.ru для документов</p>
+                            <p>info@himdivan.ru для фото</p>
+                        </div>
+                        <div class="col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li>Химчистка мебели</li>
+                                <li>Химчистка ковровых покрытий</li>
+                                <li>Клининговые услуги</li>
+                                <li>Специальные работы</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Цены</h5>
+                            <ul>
+                                <li>Наше оборудование</li>
+                                <li>Видео</li>
+                                <li>Новости</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Отзывы</h5>
+                            <ul>
+                                <li>Обучение</li>
+                                <li>Франшиза</li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Социальные сети</h5>
+                            <ul class="mediaLinks">
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Вконтакте.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ватс ап.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ютуб.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Телеграм.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

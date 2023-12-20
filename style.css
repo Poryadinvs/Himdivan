@@ -1,0 +1,466 @@
+.mediaLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.divider {
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    background-color: #F47220;
+    box-shadow: 0px 0px 5px #F47220;
+}
+
+.btn:hover {
+    border: solid 1px #F47220;
+}
+
+.nav-bottom {
+    gap: 2vh;
+}
+
+.nav-top {
+    gap: 5vh;
+}
+
+.divider {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.phone {
+    font-size: 2vh;
+    text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.47);
+    -webkit-text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.47);
+    -moz-text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0), 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 2px 2px 1px rgba(0, 0, 0, 0.47);
+    color: #007198;
+}
+
+.info {
+    font-size: 13px;
+    text-align: center;
+}
+
+.mediaLinks {
+    transition: all 0.5s;
+}
+
+.mediaLinks :first-child:hover {
+    content: url(pics/Вконтакте2.png);
+}
+
+.mediaLinks :nth-child(2):hover {
+    content: url(pics/Ватс\ ап2.png);
+}
+
+.mediaLinks :nth-child(3):hover {
+    content: url(pics/Ютуб2.png);
+}
+
+.mediaLinks :last-child:hover {
+    content: url(pics/Телеграм2.png);
+}
+
+.textInfo {
+    font-size: 5vh;
+}
+
+.proceInfo {
+    padding: 5vh;
+}
+
+.card {
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.text-over-cards {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 50px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.56);
+}
+
+.text-over-cards span,
+.text-center span,
+.card-title span,
+.my-4 span,
+.topText,
+.rewTitle .text,
+.BackCall,
+.datCard .card-title {
+    color: #007198;
+}
+
+.footer,
+.whatWeDo,
+.proceInfo,
+.countPrice,
+.CardAdvantages,
+.CardAdvantages,
+.EducationForCleaning {
+    background-color: #daf1f9;
+}
+
+.PriceTopCard {
+    margin-top: 10vh;
+}
+
+.CardAdvantages {
+    height: 13vh;
+}
+
+.PricePopular {
+    color: #F47220;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.СardServices:first-child {
+    background: url(pics/back1.png) no-repeat;
+}
+
+.СardServices:nth-child(2) {
+    background: url(pics/back2.png) no-repeat;
+}
+
+.СardServices:nth-child(3) {
+    background: url(pics/back3.png) no-repeat;
+
+}
+
+.СardServices:last-child {
+    background: url(pics/back4.png) no-repeat;
+
+}
+
+.quantity_inner * {
+    box-sizing: border-box;
+}
+
+.quantity_inner {
+    display: inline-flex;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.quantity_inner .bt_minus,
+.quantity_inner .bt_plus,
+.quantity_inner .quantity {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
+}
+
+.quantity_inner .quantity {
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.quantity_inner .bt_minus svg,
+.quantity_inner .bt_plus svg {
+    stroke: #000;
+    stroke-width: 4;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.choosePrice {
+    border: solid 1px black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.countPrice {
+    padding: 3vh;
+}
+
+.calc {
+    border: solid 1px #007198;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5vh;
+}
+
+.calc .row {
+    margin-left: 28vh;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #F47220;
+    cursor: pointer;
+}
+
+.value {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.secRow {
+    margin-top: 10px;
+    gap: 290px;
+}
+
+.wanaDiscound {
+    margin-top: 50px;
+}
+
+.topText,
+.bottomText,
+.BackCall {
+    font-weight: bold;
+}
+
+#carouselExampleDark .carousel-inner {
+    height: 450px;
+}
+
+.RutubeBTN {
+    margin-top: 5vh;
+}
+
+.rewTitle {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.rewTitle .stars {
+    margin-left: 10px;
+}
+
+.rewCount {
+    position: absolute;
+    left: 84%
+}
+
+.rewCount span {
+    font-weight: bold;
+}
+
+.rewContainer .card {
+    padding: 20px;
+    position: relative;
+}
+
+.rewContainer .card .card-title,
+.newsCard .card-title,
+.JobDetails .title {
+    font-weight: bold;
+}
+
+.rewContainer .card .bottom {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bigCardDate {
+    position: absolute;
+    left: 80%;
+}
+
+.snallCardDate {
+    position: absolute;
+    left: 50%;
+}
+
+.newsCard,
+.EquipmentCard,
+.datCard,
+.MaksimsCard .card {
+    text-align: left;
+    border: 2px solid #007198;
+    padding: 15px;
+}
+
+.news .btn {
+    margin-top: 30px;
+}
+
+.JobDetails li {
+    list-style-type: disc;
+}
+
+.whatWeDo h1 {
+    font-size: 70px;
+}
+
+.whatWeDo .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatWeDo .row:last-child {
+    font-size: 20px;
+}
+
+.EquipmentCard .card-text {
+    text-align: left;
+}
+
+.EquipmentCard {
+    height: 550px;
+}
+
+.companies {
+    margin-top: 45px;
+}
+
+.logos {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 40px auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+
+    &:nth-child(even) {
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.EducationForCleaning .text-over-cards {
+    text-shadow: none;
+}
+
+.titleText {
+    font-size: 20px;
+}
+
+.EducationForCleaning {
+    padding: 45px;
+}
+
+.textRow {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.textRow span,
+.invitationCard span,
+.MaksimsCard .row:last-child .title span,
+.MaksimsCard .row:last-child .phoneNum {
+    color: #000;
+    font-weight: bold;
+}
+
+.schedulesTitle {
+    margin-left: 320px;
+}
+
+.datCard {
+    height: 120px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.datCard .card-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.MaksimsCard .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.MaksimsCard .card img {
+    height: 200px;
+}
+
+.MaksimsCard .card {
+    width: 950px;
+}
+
+.MaksimsCard .row:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MaksimsCard .row:last-child .title {
+    margin-bottom: 60px;
+}
+
+.MaksimsCard .row:last-child .phoneNum {
+    font-size: 35px;
+}
