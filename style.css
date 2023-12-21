@@ -4,7 +4,6 @@
     gap: 2vh;
 }
 
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +103,8 @@ li {
 .topText,
 .rewTitle .text,
 .BackCall,
-.datCard .card-title {
+.datCard .card-title,
+.newsPage .col-md-4 .card-title {
     color: #007198;
 }
 
@@ -114,7 +114,8 @@ li {
 .countPrice,
 .CardAdvantages,
 .CardAdvantages,
-.EducationForCleaning {
+.EducationForCleaning,
+.newsTitle {
     background-color: #daf1f9;
 }
 
@@ -463,4 +464,51 @@ li {
 
 .MaksimsCard .row:last-child .phoneNum {
     font-size: 35px;
+}
+
+.newsTitle .container {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.newsPage .container {
+    margin-top: 45px;
+}
+
+.newsPage .row{
+    border-top: 1px solid;
+}
+
+.newsPage .row :nth-child(1){
+    border-top:none;
+}
+
+.newsPage .card {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.newsPage .col-md-4 .card-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.newsPage .col-md-8 .card-title{
+    font-weight: bold;
+}
+
+.newsPage .open{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.newsPage .col-md-8 .card:hover{
+    color: #F47220;
+}
+
+
+.newsPage .col-md-8 .card:hover .open{
+    color: #F47220;
 }
