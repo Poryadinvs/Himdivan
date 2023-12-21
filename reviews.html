@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Отзывы</title>
+</head>
+
+<body>
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="pics/Логотип.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="pics/Group.png" alt="">
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-top">
+                    <li class="nav-item dropdown cities">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Москва
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                            <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="mediaLinks">
+                            <li>
+                                <a href="">
+                                    <img src="pics/Вконтакте.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ватс ап.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ютуб.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Телеграм.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="info">
+                            <div class="phone">+7 (495) 649-62-46</div>
+                            Мы на связи с 9:00 до 19:00
+                        </div>
+                    </li>
+                    <!-- Заказать звонок -->
+                    <li class="nav-item">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Заказать звонок</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title BackCall" id="exampleModalLabel">Обратный звонок</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Телефон</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                            конфиденциальности и даете согласие на обработку своих персональных
+                                            данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bottom">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">
+                            Наше оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Видео
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">
+                            Нововсти
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Заголовок -->
+    <div class="rewiewsTitle">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Отзывы
+                    </div>
+                    <div class="stars">
+                        <img src="pics/Звёзды.svg" alt="">
+                        <div class="rewiewsCount"><span>75 </span>отзывов</div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#rewModal"
+                        data-bs-whatever="@getbootstrap">Оставить отзыв</button>
+                    <div class="modal fade" id="rewModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title BackCall" id="exampleModalLabel">Оставить отзыв</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Имя</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">E-mail</label>
+                                            <input type="text" class="form-control" id="Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Отзыв</label>
+                                            <input type="text" class="form-control" id="rew">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Отправить</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                        конфиденциальности и даете согласие на обработку своих персональных
+                                        данных</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Отзывы -->
+    <div class="rewiewsPage">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-title">
+                        Ирина
+                    </div>
+                    <div class="card-text">17/08/2022 13:50
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-text">
+                        Большое спасибо Константину за выполненную работу по чистке мягкой мебели, всё очень
+                        качественно, быстро, отдельно хотела бы отметить пунктуальность и вежливость Константина,
+                        обязательно буду обращаться ещё и с удовольствием порекоммендую знакомым.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ура футекр -->
+    <div class="footer">
+        <div class="container">
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <img src="pics/Логотип.svg" alt="">
+                            </div>
+                            <p>+7 (495) 649-62-46</p>
+                            <p>doc@himdivan.ru для документов</p>
+                            <p>info@himdivan.ru для фото</p>
+                        </div>
+                        <div class="col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li>Химчистка мебели</li>
+                                <li>Химчистка ковровых покрытий</li>
+                                <li>Клининговые услуги</li>
+                                <li>Специальные работы</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Цены</h5>
+                            <ul>
+                                <li>Наше оборудование</li>
+                                <li>Видео</li>
+                                <li>Новости</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Отзывы</h5>
+                            <ul>
+                                <li>Обучение</li>
+                                <li>Франшиза</li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Социальные сети</h5>
+                            <ul class="mediaLinks">
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Вконтакте.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ватс ап.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ютуб.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Телеграм.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

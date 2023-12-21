@@ -104,7 +104,8 @@ li {
 .rewTitle .text,
 .BackCall,
 .datCard .card-title,
-.newsPage .col-md-4 .card-title {
+.newsPage .col-md-4 .card-title,
+.rewiewsTitle .card-title {
     color: #007198;
 }
 
@@ -115,7 +116,8 @@ li {
 .CardAdvantages,
 .CardAdvantages,
 .EducationForCleaning,
-.newsTitle {
+.newsTitle,
+.rewiewsTitle{
     background-color: #daf1f9;
 }
 
@@ -471,7 +473,12 @@ li {
     font-weight: bold;
 }
 
-.newsPage .container {
+.rewiewsTitle .container{
+    padding: 15px;
+}
+
+.newsPage .container,
+.rewiewsPage .container {
     margin-top: 45px;
 }
 
@@ -512,3 +519,37 @@ li {
 .newsPage .col-md-8 .card:hover .open{
     color: #F47220;
 }
+
+.rewiewsTitle{
+    position: relative;
+}
+
+.rewiewsTitle .stars{
+    display: flex;
+    gap: 20px;
+}
+
+.rewiewsTitle span,
+.rewiewsPage .card-title{
+    font-weight: bold;
+}
+
+.rewiewsTitle .card-title{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.rewiewsTitle .row:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.rewiewsPage .row{
+    border-top: 1px solid ;
+    padding: 15px;
+}
+
+.rewiewsPage .card-text{
+    font-style: italic;
+    font-size: 14px;
+} 
