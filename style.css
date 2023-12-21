@@ -117,7 +117,8 @@ li {
 .CardAdvantages,
 .EducationForCleaning,
 .newsTitle,
-.rewiewsTitle{
+.rewiewsTitle,
+.videoTitle{
     background-color: #daf1f9;
 }
 
@@ -539,7 +540,8 @@ li {
     font-size: 45px;
 }
 
-.rewiewsTitle .row:last-child{
+.rewiewsTitle .row:last-child,
+.videoTitle .row:last-child{
     display: flex;
     align-items: center;
 }
@@ -553,3 +555,31 @@ li {
     font-style: italic;
     font-size: 14px;
 } 
+
+.videoTitle .card-tetx{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.videoTitle a{
+    color: #000;
+}
+
+.videoTitle .btn{
+    margin-left: 35px;
+    padding: 10px;
+}
+
+.videoTitle{
+    padding: 15px;
+}
+
+.videoTitle .card-title{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+
+
+
