@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Цены</title>
+</head>
+
+<body>
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="pics/Логотип.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="pics/Group.png" alt="">
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-top">
+                    <li class="nav-item dropdown cities">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Москва
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                            <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="mediaLinks">
+                            <li>
+                                <a href="">
+                                    <img src="pics/Вконтакте.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ватс ап.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ютуб.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Телеграм.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="info">
+                            <div class="phone">+7 (495) 649-62-46</div>
+                            Мы на связи с 9:00 до 19:00
+                        </div>
+                    </li>
+                    <!-- Заказать звонок -->
+                    <li class="nav-item">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Заказать звонок</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title BackCall" id="exampleModalLabel">Обратный звонок</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Телефон</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                            конфиденциальности и даете согласие на обработку своих персональных
+                                            данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bottom">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">
+                            Наше оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">
+                            Видео
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">
+                            Нововсти
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок -->
+    <div class="priceTitle">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="my-4"><span>Прйс</span> на услуги химчистки</h1>
+                    </div>
+                    <div class="col">
+                        Проконсультироваться по всем вопросам можно с нашим специалистом оценщиком, связавшись с ним по
+                        телефону.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Цены -->
+    <div class="pricePage mt-4">
+        <div class="container text-center">
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1">Выезд мастера</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2">Мягкая мебель</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3">Ковры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4">Матрас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5">Ковролин</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab6-tab" data-bs-toggle="tab" href="#tab6">Шторы</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-4">
+                    <!-- Выезд мастера -->
+                    <div class="tab-pane fade show active" id="tab1">
+                        <div class="row">
+                            <div class="card cardMaster title">
+                                <div class="col">Расстояние</div>
+                                <div class="col">Стоимость, руб.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardMaster">
+                                <div class="col where">В пределах МКАД</div>
+                                <div class="col price">Бесплатно</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardMaster">
+                                <div class="col where">За МКАД до 10 км.</div>
+                                <div class="col price">Бесплатно</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardMaster">
+                                <div class="col where">За МКАД с 11 км.</div>
+                                <div class="col price">40 руб. / км.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Мягкая мебель -->
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="row">
+                            <div class="card cardSoft title">
+                                <div class="col types">Стоимость, руб.</div>
+                                <div class="col"> Вид мебели</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Два места 2.png" alt=""></div>
+                                <div class="col where">2 посадочных места (1,0-1,4м. между подлокотниками)</div>
+                                <div class="col price">6 500</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Три места 2.png" alt=""></div>
+                                <div class="col where">3 посадочных места (1,45-2,0м. между подлокотниками)</div>
+                                <div class="col price">8 250</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Угловой 2.png" alt=""></div>
+                                <div class="col where">Угловой диван на 2 посадочных места + условая секция</div>
+                                <div class="col price">10 250</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Большой угловой 2.png" alt=""></div>
+                                <div class="col where">Большой угловой диван (3 посадочных места + угловая секция)</div>
+                                <div class="col price">14 375</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Подушка декоративная 2.png" alt=""></div>
+                                <div class="col where">Декоративная подушка (40*40)</div>
+                                <div class="col price">450</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft cardNote">
+                                <div class="noteTitle">Примечание</div>
+                                <ul>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Пятна, выведенные в процессе общей чистки, не оплачиваются.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Ткани такие как: ФЛОК, ИСКУССТВЕННАЯ ЗАМША - оплачиваются с коэф. 2
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Ткани такие как: ШЕЛК, БАРХАТ, ВЕЛЮР, ЖАКАРД и др. - оплачиваются с коэф.
+                                        3,5
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Разобранная мебель оплачивается с коэф. 1,25
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Кожаная мебель оплачивается с коэф. 1,5 - 2
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Сушка мебели оплачивается с 1 час. - 1 000 руб.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Стоимость чистки эксклюзивной, нестандартной, или мебели ручной работы
+                                        согласовывается с технологом
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Удаление шерсти животных оплачивается с коэф. 1,5-3
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn" type="button">Подробнее об услуге</button>
+                        </div>
+                    </div>
+                    <!-- Ковры -->
+                    <div class="tab-pane fade" id="tab3">
+                        <div class="row">
+                            <div class="card cardSoft title">
+                                <div class="col types">Стоимость, руб.</div>
+                                <div class="col"> Материял ковра</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Синтетика</div>
+                                <div class="col price">800</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Шерсть/полушерсть</div>
+                                <div class="col price">1 200</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">На клеевой основе (синтетика, шерсть, полушерсть)</div>
+                                <div class="col price">1 600</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Шегги, ворс до 5 см. (синтетика, шерсть)</div>
+                                <div class="col price">1 800</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Гобеленовый (вискоза, хлопок шелк)</div>
+                                <div class="col price">2 400</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Ручной работы (шерсть, шелк)</div>
+                                <div class="col price">450</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Вискоза</div>
+                                <div class="col price">2 800</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft cardNote">
+                                <div class="noteTitle">Примечание</div>
+                                <ul>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Площадь ковра определяется по формуле: S = a * b
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Если ковер состоит из шерсти или синтетики, но в составе есть 1% вискозы или
+                                        шелка, то ковер чиститься по технологии чистки шелкового или вискозного ковра.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Цены указаны предварительные. Точная стоимость будет определена после приемки и
+                                        оценки ковра на фабрике.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Доставка ковра на фабрику и обратно - 1 000 руб.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Если ковер более 6 м.кв., то стоимость доставки обсуждается индивидуально.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn" type="button">Подробнее об услуге</button>
+                        </div>
+                    </div>
+                    <!-- Матрас -->
+                    <div class="tab-pane fade" id="tab4">
+                        <div class="row">
+                            <div class="card cardSoft title">
+                                <div class="col types">Стоимость, руб.</div>
+                                <div class="col"> Вид мебели</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Два места 2.png" alt=""></div>
+                                <div class="col where">2 посадочных места (1,0-1,4м. между подлокотниками)</div>
+                                <div class="col price">6 500</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Три места 2.png" alt=""></div>
+                                <div class="col where">3 посадочных места (1,45-2,0м. между подлокотниками)</div>
+                                <div class="col price">8 250</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Угловой 2.png" alt=""></div>
+                                <div class="col where">Угловой диван на 2 посадочных места + условая секция</div>
+                                <div class="col price">10 250</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Большой угловой 2.png" alt=""></div>
+                                <div class="col where">Большой угловой диван (3 посадочных места + угловая секция)</div>
+                                <div class="col price">14 375</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="pic"><img src="pics/Подушка декоративная 2.png" alt=""></div>
+                                <div class="col where">Декоративная подушка (40*40)</div>
+                                <div class="col price">450</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn" type="button">Подробнее об услуге</button>
+                        </div>
+                    </div>
+                    <!-- Ковролин -->
+                    <div class="tab-pane fade" id="tab5">
+                        <div class="row">
+                            <div class="card cardSoft title">
+                                <div class="col types">Стоимость, руб.</div>
+                                <div class="col"> Вид ковролина</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">До 100 кв.м.</div>
+                                <div class="col price">6 500</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">От 101 до 500 кв.м.</div>
+                                <div class="col price">150</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Более 501 кв.м.</div>
+                                <div class="col price">120</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Более 1000 кв.м.</div>
+                                <div class="col price">индивидуально</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Средневорсные/длинноворсные</div>
+                                <div class="col price">коэф. 1,8-2,3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft cardNote">
+                                <div class="noteTitle">Примечание</div>
+                                <ul>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Минимальная стоимость выезда бригады - 12 000р.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Стоимость может быть увеличена, если офис очень плотно заставлен мебелью.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Стоимость может быть увеличена, если есть дополнительные сложности такие как:
+                                        <br>
+                                        - расположение туалета далеко от места проведения работ;
+                                        <br>
+                                        - сложности с доставкой оборудования;
+                                        <br>
+                                        - сильная степень загрязнения;
+                                        <br>
+                                        - множество пятен, разлитых жидкостей, и др.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn" type="button">Подробнее об услуге</button>
+                        </div>
+                    </div>
+                    <!-- Шторы -->
+                    <div class="tab-pane fade" id="tab6">
+                        <div class="row">
+                            <div class="card cardSoft title">
+                                <div class="col types">Стоимость, руб.</div>
+                                <div class="col"> Вид ковролина</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">До 100 кв.м.</div>
+                                <div class="col price">6 500</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">От 101 до 500 кв.м.</div>
+                                <div class="col price">150</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Более 501 кв.м.</div>
+                                <div class="col price">120</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Более 1000 кв.м.</div>
+                                <div class="col price">индивидуально</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft">
+                                <div class="col where">Средневорсные/длинноворсные</div>
+                                <div class="col price">коэф. 1,8-2,3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card cardSoft cardNote">
+                                <div class="noteTitle">Примечание</div>
+                                <ul>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Минимальная стоимость выезда бригады - 12 000р.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Стоимость может быть увеличена, если офис очень плотно заставлен мебелью.
+                                    </li>
+                                    <li>
+                                        <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                                        Стоимость может быть увеличена, если есть дополнительные сложности такие как:
+                                        <br>
+                                        - расположение туалета далеко от места проведения работ;
+                                        <br>
+                                        - сложности с доставкой оборудования;
+                                        <br>
+                                        - сильная степень загрязнения;
+                                        <br>
+                                        - множество пятен, разлитых жидкостей, и др.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.querySelectorAll('.nav-link').forEach(function (tab) {
+                    tab.addEventListener('shown.bs.tab', function (event) {
+                        var tabId = event.target.id.replace('-tab', '');
+                        var tabText = event.target.innerText;
+                        document.getElementById('selectedTab').innerText = 'Выбрано: ' + tabText;
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <!-- Подробности о работе -->
+    <div class="JobDetails">
+        <div class="container">
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Подробности о нашей работе
+                </a>
+                <ul class="dropdown-menu">
+                    <div class="title">Клининговая компания Химдиван с выездом на дом в Москве</div>
+                    <div class="text">Специализированная клининговая компания «Химдиван» более 10 лет предоставляет
+                        широкий спектр
+                        услуг по чистке всех видов мебели и сопутствующих изделий, ковровых покрытий, а также по уборке
+                        помещений.
+                        Мы
+                        имеем все необходимое оборудование и моющие средства для удаления пятен и загрязнений любой
+                        сложности.
+                        Квартиры, частные дома, офисы, торговые помещения – охватываем любые помещения независимо от их
+                        планировки и
+                        площади. У нас можно заказать химчистку на дом на любое время дня. Помимо этого, мы
+                        предоставляем широкий
+                        спектр услуг по чистке салонов автомобилей: пассажирских, коммерческих, легковых и грузовых.
+                        Доступная цена,
+                        гарантия качества.</div>
+                    <div class="title">Преимущества компании «Химдиван»</div>
+                    <div class="text">Несмотря на кажущуюся простоту, химчистка и другие услуги по уборке требуют
+                        высокой
+                        ответственности. Иначе качество чистки не будет удовлетворительным. Более того, можно заказать
+                        клининг на
+                        дом
+                        и в результате испортить мебель, ковровое покрытие или отделку. Поэтому наша компания практикует
+                        комплексный
+                        подход. Это обеспечивает ряд преимуществ, которые оценили все клиенты. Если будете заказывать у
+                        нас услуги,
+                        то
+                        можете рассчитывать на следующее:
+                        <ul>
+                            <li> профессионализм. В работе мы используем только проверенные и качественные химические
+                                составы и
+                                оборудование от
+                                европейских производителей, обеспечивающие безопасное и точечное удаление пятен. Мягкая
+                                мебель,
+                                ковролин,
+                                матрасы, паркет – для каждой задачи подбирается индивидуальный инструментарий и
+                                средства, чтобы учесть
+                                степень
+                                и тип загрязнения, материал и пр.;</li>
+                            <li> высокая эффективность. Наш клининг в Москве ставит задачу полностью удалить любые
+                                пятна: от еды,
+                                чернил,
+                                косметики. А также избавиться от въевшегося запаха, уничтожить опасные микроорганизмы и
+                                насекомых
+                                (клещи,
+                                клопы и пр.). В результате помещение, мебель и отделка восстанавливают первоначальный
+                                вид;</li>
+                            <li> доступные тарифы. Ценовая политика оптимизирована таким образом, что мы можем
+                                предлагать приемлемую
+                                стоимость
+                                без потери качества. При этом у нас доступна гибкая система услуг, учитывающая тип
+                                помещения (квартира,
+                                торговый зал, производство, офис), вид мебели (диван, пуф, стулья, кровать) и другие
+                                факторы.</li>
+                        </ul>
+                    </div>
+                    <div class="title">Эффективность услуг</div>
+                    <div class="text">Наша клининговая компания в Москве делает все возможное, чтобы результат работ
+                        превзошел все
+                        ожидания клиента. Мы стараемся оказывать качественные услуги, которые отличаются следующим:
+                        <ul>
+                            <li>удаление не только пятен, но и неприятного запаха;</li>
+                            <li>восстановление цвета с сохранением структуры и фактуры материалов;</li>
+                            <li>выравнивание ворса (актуально для мебели и ковровых покрытий);</li>
+                        </ul>
+                        уничтожение пылевых клещей и других опасных для организма человека вредителей.
+                        В нашем «арсенале» широкий перечень инструментов, чистящих средств и оборудования, что позволяет
+                        проводить
+                        любые виды клининга: сухой, влажный, химический. При этом в обязательном порядке учитывается тип
+                        тканей: для
+                        деликатных материалов осторожно подбираются моющие составы с предварительной проверкой.
+                    </div>
+                    <div class="title">Химчистка с выездом на дом</div>
+                    <div class="text">Очень часто услуги клининговой компании требуются на месте. Это может быть офис,
+                        загородный
+                        дом или коттедж. У нас имеется подготовленное авто, что позволяет доставить оборудование и
+                        материалы по
+                        любому
+                        адресу, провести качественную уборку и при необходимости вывести мебель или напольные покрытия
+                        для более
+                        тщательной обработки в нашем рабочем помещении. Химчистка с выездом на дом доступна в любое
+                        время и на
+                        выгодных условиях.
+                        <br>
+                        На нашем сайте вы можете узнать больше обо всех видах клининга, используемом оборудовании и
+                        материалах. А
+                        также с помощью онлайн калькулятора рассчитать, сколько будет стоить химчистка в Москве.
+                    </div>
+                    <div class="title">Химчистка ковролина</div>
+                    <div class="text">Одно из наиболее популярных направлений фирмы – химчистка ковролина. Многие
+                        хозяйки берутся
+                        самостоятельно за удаление пятен и неприятного запаха, но часто терпят крах. Почему? Как и
+                        чистка мебели,
+                        очищение ковролина – довольно хлопотное занятие, предполагающее знание его состава (качества
+                        ворса и вида
+                        подложки) и умение подбирать необходимые химсредства. Если этого не сделать, то можно получить:
+                        <ul>
+                            <li>белесые пятна (от невымытого средства);</li>
+                            <li>разводы;</li>
+                            <li>увеличенные по площади, но так и не удаленные пятна (из-за размытия их водой);</li>
+                            <li>вытертый ворс и др.</li>
+                        </ul>
+                        Поэтому химчистка ковролина, как и чистка ковров и мягкой мебели, должна выполняться только
+                        профессионалами,
+                        которые могут оценить степень загрязнений и подобрать подходящий тип химчистки.
+                    </div>
+                    <div class="title">Химчистка ковров на дому</div>
+                    <div class="text">Химическая чистка ковролина происходит только на дому, так как данное покрытие не
+                        предназначено к транспортировке. Ковры же можно чистить и в компании, но это более хлопотно и
+                        долго. Гораздо
+                        проще заказать химчистку ковров и мебели на дому, благодаря чему не нужно будет носить тяжелый и
+                        громоздкий
+                        ковер, и тратить врем на его транспортировку.
+                        Химчистка ковровых изделий на дому – удобно, ведь специалисты сами приедут на место и всего за
+                        пару часов
+                        превратят даже самый грязный ковер в чистый и красивый. Благодаря профессиональной химчистке:
+                        <ul>
+                            <li>полностью удаляется запах (даже от мочи животных);</li>
+                            <li>разглаживается ворс;</li>
+                            <li>удаляются залосненные места и застарелые пятна;</li>
+                            <li>удаляются пылевые клещи, провоцирующие аллергию, приступы астмы, конъюнктивит и др.
+                                заболевания.</li>
+                        </ul>
+                    </div>
+                    <div class="title">Химчистка диванов на дому</div>
+                    <div class="text">Профессиональная чистка мягкой мебели, в том числе диванов, также удобна, когда
+                        проводится
+                        непосредственно в помещении. В данном случае не нужно транспортировать тяжелый диван в компанию.
+                        Более того,
+                        в пределах МКАДа и 10 км от него выезд специалиста на дом осуществляется абсолютно бесплатно.
+                        Безусловно, такая услуга, как выездная химчистка мебели предполагает наличие шума, поэтому не
+                        стоит
+                        планировать данную процедуру на время дневного сна ребенка. Тем же, кто беспокоится об уровне
+                        громкости, не
+                        стоит беспокоиться, ведь звук оборудования можно сравнить с шумом пылесоса или же блендера.
+                    </div>
+                    <div class="title">Химчистка матрасов и удаление запаха мочи</div>
+                    <div class="text">Химчистка мастрасов и чехлов – отдельный пункт услуг компании «Химдиван», ведь
+                        состав и само
+                        покрытие очень отличаются от покрытия мягкой мебели. Так, если чистка мягкой мебели на дому
+                        предполагает
+                        использование одних средств, то для очистки матрасов и средства нужны другие. Чаще всего
+                        применяется сухая
+                        техника, позволяющая мягко и деликатно справиться с различными проблемами матрасов:
+                        <ul>
+                            <li>запахом и следами мочи;</li>
+                            <li>въевшимся запахом пота;</li>
+                            <li>следами от напитков, продуктов питания, крови и т. д.;</li>
+                            <li>накопленной внутри пыли и следов жизнедеятельности пылевых клещей, которые могут стать
+                                причиной
+                                возникновения аллергических высыпаний, насморка, приступов астмы и др.</li>
+                        </ul>
+                        Особенно трудно порой справиться с запахом мочи некоторых животных. Так, желая справиться с этой
+                        проблемой
+                        самостоятельно, многие хозяйки пытаются «замыть» пятно от мочи водой и различными растворами,
+                        увеличивая тем
+                        самым площадь самого пятна. Запах при этом не исчезает, а проникшее вглубь пятно еще сложнее
+                        убрать.
+                        Компания «Химдиван» в 95% случаев полностью избавляет от запаха мочи. Эффективная и недорогая
+                        химчистка
+                        мебели и матрасов будет еще более результативна, если сразу довериться профессионалам, а не
+                        испытывать
+                        подручные средства и проводить опыты на своей мебели, рискуя испортить ее окончательно.
+                        <br>
+                        Все еще пребываете в сомнениях? Хватит раздумывать! Компания «Химдиван» предлагает вам первое
+                        доказательство
+                        того, что мы проявляем заботу о наших клиентах еще на той стадии, когда они только начинают
+                        задумываться,
+                        нужна ли им химчистка мебели на дому, генеральная уборка или процедура удаления неприятных
+                        запахов
+                        посредством новомодной технологии «Сухой Туман». В знак этого мы дарим пять процентов скидки
+                        тому, кто
+                        дочитал этот текст до конца и действительно заинтересован в том, чтобы чистка мягкой мебели или
+                        другие
+                        работы по клинигу были произведены максимально качественно. Просто скажите оператору, что вы
+                        видели этот
+                        текст, и получите отменную возможность сэкономить.
+                        Будьте дальновидными: чистка мебели должна заказываться у настоящих профессионалов. Тогда трата
+                        денег будет
+                        оправдана, а результат вас приятно удивит!
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Ура футекр -->
+    <div class="footer">
+        <div class="container">
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <img src="pics/Логотип.svg" alt="">
+                            </div>
+                            <p>+7 (495) 649-62-46</p>
+                            <p>doc@himdivan.ru для документов</p>
+                            <p>info@himdivan.ru для фото</p>
+                        </div>
+                        <div class="col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li>Химчистка мебели</li>
+                                <li>Химчистка ковровых покрытий</li>
+                                <li>Клининговые услуги</li>
+                                <li>Специальные работы</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Цены</h5>
+                            <ul>
+                                <li>Наше оборудование</li>
+                                <li>Видео</li>
+                                <li>Новости</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Отзывы</h5>
+                            <ul>
+                                <li>Обучение</li>
+                                <li>Франшиза</li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Социальные сети</h5>
+                            <ul class="mediaLinks">
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Вконтакте.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ватс ап.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ютуб.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Телеграм.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

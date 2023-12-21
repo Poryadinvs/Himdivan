@@ -105,7 +105,8 @@ li {
 .BackCall,
 .datCard .card-title,
 .newsPage .col-md-4 .card-title,
-.rewiewsTitle .card-title {
+.rewiewsTitle .card-title,
+.pricePage .price {
     color: #007198;
 }
 
@@ -118,7 +119,9 @@ li {
 .EducationForCleaning,
 .newsTitle,
 .rewiewsTitle,
-.videoTitle{
+.videoTitle,
+.priceTitle,
+.pricePage .row .title {
     background-color: #daf1f9;
 }
 
@@ -323,7 +326,8 @@ li {
 .newsCard,
 .EquipmentCard,
 .datCard,
-.MaksimsCard .card {
+.MaksimsCard .card,
+.pricePage .card {
     text-align: left;
     border: 2px solid #007198;
     padding: 15px;
@@ -474,7 +478,7 @@ li {
     font-weight: bold;
 }
 
-.rewiewsTitle .container{
+.rewiewsTitle .container {
     padding: 15px;
 }
 
@@ -483,12 +487,12 @@ li {
     margin-top: 45px;
 }
 
-.newsPage .row{
+.newsPage .row {
     border-top: 1px solid;
 }
 
-.newsPage .row :nth-child(1){
-    border-top:none;
+.newsPage .row :nth-child(1) {
+    border-top: none;
 }
 
 .newsPage .card {
@@ -497,89 +501,134 @@ li {
     gap: 60px;
 }
 
-.newsPage .col-md-4 .card-title{
+.newsPage .col-md-4 .card-title {
     font-weight: bold;
     font-size: 30px;
 }
 
-.newsPage .col-md-8 .card-title{
+.newsPage .col-md-8 .card-title {
     font-weight: bold;
 }
 
-.newsPage .open{
+.newsPage .open {
     color: white;
     font-size: 25px;
     cursor: pointer;
 }
 
-.newsPage .col-md-8 .card:hover{
+.newsPage .col-md-8 .card:hover {
     color: #F47220;
 }
 
 
-.newsPage .col-md-8 .card:hover .open{
+.newsPage .col-md-8 .card:hover .open {
     color: #F47220;
 }
 
-.rewiewsTitle{
+.rewiewsTitle {
     position: relative;
 }
 
-.rewiewsTitle .stars{
+.rewiewsTitle .stars {
     display: flex;
     gap: 20px;
 }
 
 .rewiewsTitle span,
-.rewiewsPage .card-title{
+.rewiewsPage .card-title {
     font-weight: bold;
 }
 
-.rewiewsTitle .card-title{
+.rewiewsTitle .card-title {
     font-weight: bold;
     font-size: 45px;
 }
 
 .rewiewsTitle .row:last-child,
-.videoTitle .row:last-child{
+.videoTitle .row:last-child,
+.priceTitle .row:last-child {
     display: flex;
     align-items: center;
 }
 
-.rewiewsPage .row{
-    border-top: 1px solid ;
+.rewiewsPage .row {
+    border-top: 1px solid;
     padding: 15px;
 }
 
-.rewiewsPage .card-text{
+.rewiewsPage .card-text {
     font-style: italic;
     font-size: 14px;
-} 
+}
 
-.videoTitle .card-tetx{
+.videoTitle .card-tetx {
     font-size: 20px;
     margin-bottom: 15px;
 }
 
-.videoTitle a{
+.videoTitle a {
     color: #000;
 }
 
-.videoTitle .btn{
+.videoTitle .btn {
     margin-left: 35px;
     padding: 10px;
 }
 
-.videoTitle{
+.videoTitle {
     padding: 15px;
 }
 
-.videoTitle .card-title{
+.videoTitle .card-title {
     font-weight: bold;
     font-size: 45px;
     margin-bottom: 35px;
 }
 
+.priceTitle .row:last-child {
+    font-size: 20px;
+}
 
+.priceTitle .my-4 {
+    font-size: 55px;
+}
 
+.pricePage .card {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.pricePage .row .title,
+.pricePage .price {
+    font-weight: bold;
+}
+
+.pricePage .where {
+    font-style: italic;
+}
+
+.pricePage .tab-content {
+    margin-bottom: 30px;
+}
+
+.pricePage .cardSoft {
+    width: 850px;
+    position: relative;
+}
+
+.pricePage .cardSoft .price {
+    position: absolute;
+    left: 90%;
+}
+
+.pricePage .cardSoft .types{
+    position: absolute;
+    left: 85%;
+}
+
+.pricePage .cardNote{
+    flex-direction: row;
+}
