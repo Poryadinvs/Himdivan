@@ -106,7 +106,10 @@ li {
 .datCard .card-title,
 .newsPage .col-md-4 .card-title,
 .rewiewsTitle .card-title,
-.pricePage .price {
+.pricePage .price,
+.cardCurtains .price1,
+.cardCurtains .price2,
+.contactPage span {
     color: #007198;
 }
 
@@ -264,7 +267,9 @@ li {
 
 .topText,
 .bottomText,
-.BackCall {
+.BackCall,
+.cardCurtains .price1,
+.cardCurtains .price2 {
     font-weight: bold;
 }
 
@@ -327,7 +332,8 @@ li {
 .EquipmentCard,
 .datCard,
 .MaksimsCard .card,
-.pricePage .card {
+.pricePage .card,
+.details .card {
     text-align: left;
     border: 2px solid #007198;
     padding: 15px;
@@ -535,12 +541,15 @@ li {
 }
 
 .rewiewsTitle span,
-.rewiewsPage .card-title {
+.rewiewsPage .card-title,
+.pricePage .row .title,
+.pricePage .price,
+.noteTitle,
+.rewiewsTitle .card-title {
     font-weight: bold;
 }
 
 .rewiewsTitle .card-title {
-    font-weight: bold;
     font-size: 45px;
 }
 
@@ -601,11 +610,6 @@ li {
     margin-right: auto;
 }
 
-.pricePage .row .title,
-.pricePage .price {
-    font-weight: bold;
-}
-
 .pricePage .where {
     font-style: italic;
 }
@@ -621,14 +625,48 @@ li {
 
 .pricePage .cardSoft .price {
     position: absolute;
-    left: 90%;
+    left: 85%;
 }
 
-.pricePage .cardSoft .types{
+.pricePage .cardSoft .types {
     position: absolute;
     left: 85%;
 }
 
-.pricePage .cardNote{
-    flex-direction: row;
+.howToPay .card {
+    align-items: center;
 }
+
+.howToPay .count {
+    text-align: center;
+    background-color: #F47220;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.howToPay .bottom {
+    font-size: 14px;
+}
+
+.detailsCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detailsCards .card {
+    width: 900px;
+}
+
+.detailsCards .card-text {
+    margin-left: auto;
+}
+
