@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Франшиза</title>
+</head>
+
+<body>
+    <!-- Навбар -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="pics/Логотип.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="pics/Group.png" alt="">
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-top">
+                    <li class="nav-item dropdown cities">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Москва
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+                            <li><a class="dropdown-item" href="#">Екатеринбург</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="mediaLinks">
+                            <li>
+                                <a href="">
+                                    <img src="pics/Вконтакте.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ватс ап.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Ютуб.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="pics/Телеграм.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="info">
+                            <div class="phone">+7 (495) 649-62-46</div>
+                            Мы на связи с 9:00 до 19:00
+                        </div>
+                    </li>
+                    <!-- Заказать звонок -->
+                    <li class="nav-item">
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@getbootstrap">Заказать звонок</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title BackCall" id="exampleModalLabel">Обратный звонок</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Имя</label>
+                                                <input type="text" class="form-control" id="name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phone" class="form-label">Телефон</label>
+                                                <input type="tel" class="form-control" id="phone">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <small>Нажимая на кнопку, вы подтверждаете, что ознакомились с политикой
+                                            конфиденциальности и даете согласие на обработку своих персональных
+                                            данных</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="divider">
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bottom">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+                            <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="price.html">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">
+                            Наше оборудование
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">
+                            Видео
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">
+                            Нововсти
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="franchise.html">
+                            Франшиза
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Заголовок -->
+    <div class="franchiseTitle">
+        <div class="container">
+            <h1 class="my-4"><span>Франшиза</span> химчистки <br>“ХимДиван”</h1>
+        </div>
+    </div>
+    <!-- Карточка руководителя компаннии -->
+    <div class="directorCard mt-5">
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col who d-flex">
+                        <div class="col text-center me-5">
+                            <div class="pic">
+                                <img src="pics/MaksimSidenko.png" alt="">
+                            </div>
+                            <div class="card-title fw-bold">
+                                Максим Сиденко,
+                            </div>
+                            <div class="card-text">
+                                руководит компанией и распределяет мастеров
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col about">
+                        <div class="text">
+                            В Википедии написано, что Франшиза — объект договора франчайзинга, комплекс благ, состоящий
+                            из
+                            прав пользования брендом и бизнес-моделью франчайзера, а также иных благ, необходимых для
+                            создания и ведения бизнеса.
+                            <br>
+                            <br>
+                            Короче скука. Сейчас расскажу, какой смысл я засунул в слово Франшиза.
+                            <br>
+                            <br>
+                            Химдиван – это не Макдональдс и не Лукойл. Я это понимаю, и, купив у меня франшизу – не
+                            надейтесь, что к вам очередь выстроится из клиентов только потому, что вы назвались
+                            «Химдиван».
+                            И не надейтесь, что работать будете 4 часа в неделю, как рассказывают многие бизнес тренеры.
+                            Нее, такого точно не будет.
+                        </div>
+                        <div class="text fw-bold">
+                            Более того, я вам со всей ответственностью заявляю, что чтобы добиться успеха – вам придется
+                            работать по 14 часов в день на протяжении 3-5 лет без выходных. Если вы готовы к такому – то
+                            милости просим к нам в команду!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Карта франшизы -->
+    <div class="mapOfFeanchise mt-5">
+        <div class="container text-center">
+            <div class="title fw-bold mb-3" style="font-size: 30px;">Карта России с точками франшизы "ХимДиван"</div>
+            <div class="map">
+                <img src="pics/Map (2).png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Почему мы -->
+    <div class="whyWe">
+        <div class="container mt-5">
+            <h2 class="my-4">Итак, почему именно<br> <span>Химчистка мягкой мебели</span>?</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Один из наиболее перспективных сегодня видов бизнеса – выездная чистка мягкой мебели, ковров
+                        и ковровых покрытий на дом. Химчистка обходится населению и организациям дешевле, чем
+                        покупка новой мебели, диванов или ковров. И в самые кризисные годы, когда весь рынок падал -
+                        рынок клининга снижался незначительно, а иногда даже рос! И сегодня рынок клинига растет.
+                    </p>
+                    <h2 class="proc">20-30%</h2>
+                    <p>наших клиентов заказывают услуги химчистки ВПЕРВЫЕ в жизни! До этого они НИКОГДА не
+                        заказывали химчистку диванов.
+                    </p>
+                    <p>Москва и Питер немного обгоняют регионы, и количество таких заказчиков будет расти с тем же
+                        темпом еще лет 5 точно!
+                        Ну а так же очень низкий уровень входа в бизнес. Можно купить экстрактор на авито, какую-то
+                        химию, сделать инстаграм себе и уже с этого стартануть. Как многие и делают.</p>
+                </div>
+                <div class="col">
+                    <div class="pic">
+                        <img src="pics/chart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Плюсы -->
+    <div class="advantages">
+        <div class="container">
+            <h2 class="my-4"><span>Плюсы</span> покупки франшизы</h2>
+            <div class="row">
+                <div class="col colText">
+                    По сравнению с самостоятельным открытием бизнеса приобретение франшизы значительно снижает риски
+                    разорения. По статистике, около 70-80% предприятий, работающих на условиях франшизы, в течение 5 лет
+                    после открытия остаются на плаву, в то время как 90% обычных бизнесменов закрываются.
+                    <div class="fw-bold">
+                        Главное преимущество нашей франшизы в том, что франчайзи получает абсолютно все для старта
+                        бизнеса, а также хорошую поддержку со стороны компании после начала деятельности:
+                    </div>
+                </div>
+                <h2 class="col text-center">
+                    За 5 лет:
+                </h2>
+                <div class="col d-flex">
+                    <div class="col">
+                        <div class="card roundProc text-center">
+                            <div class="card-img">
+                                <img src="pics/70-80%.svg" alt="">
+                            </div>
+                            <div class="card-title proc text-white z-1 fw-bold">
+                                70-80%
+                            </div>
+                            <div class="card-text fst-italic">компаний по франшизе остается</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card roundProc text-center">
+                            <div class="card-img">
+                                <img src="pics/90%.svg" alt="">
+                            </div>
+                            <div class="card-title proc text-white z-1 fw-bold">
+                                90%
+                            </div>
+                            <div class="card-text fst-italic">самостоятельных компаний закрывается</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Оборудование</div>
+                            <div class="card-title">/01</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Чистящие средства и сумки</div>
+                            <div class="card-title">/02</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Сайт, инстаграм, настроенные CRM и ip телефония</div>
+                            <div class="card-title">/03</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Обучение (технологии чистки, продажи, финансовый учет)</div>
+                            <div class="card-title">/04</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Поддержка в чате по любым вопросам (где купить, как почистить, как
+                                рекламировать, что работает у коллег и т.п.)</div>
+                            <div class="card-title">/05</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Документы (акты, договора, коммерческие предложения и т.п.)</div>
+                            <div class="card-title">/06</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">Более того, если возникнет вопрос: как помыть окна – то мы и этому обучим.
+                    Бывает такое, что корпоративные клиенты просят почистить кресла, ковролин и окна помыть. В этом
+                    случае я помогу рассчитать объект.</div>
+                <div class="col">Скажу, что нужно купить и у кого, какую химию, какой инвентарь, сколько нужно людей для
+                    выполнения работы и какую стоимость объявить клиенту. Такое обучение происходит уже удаленно.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Особенности -->
+    <div class="peculiarities">
+        <div class="container">
+            <h3 class="my-4"><span>Особенности</span> условий покупки франшизы</h3>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="card-img">
+                        <img src="pics/littleTown.png" alt="">
+                    </div>
+                    <div class="card-text fw-bold">
+                        до 100 000 чел = <span>160 000 ₽</span>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card-img">
+                        <img src="pics/MediumTown.png" alt="">
+                    </div>
+                    <div class="card-text fw-bold">
+                        более 100 000 чел = <span>220 000 ₽</span>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="card-img">
+                        <img src="pics/BigCity.png" alt="">
+                    </div>
+                    <div class="card-text fw-bold">
+                        более 1 млн чел = <span>280 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            В нашем договоре прописаны условия нашего сотрудничества. Сейчас перечислю основные моменты:
+                        </li>
+                        <li>
+                            <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                            Я обязуюсь обучить вас и передать все то, что перечислял выше. (Технику, сайт, сим-карту и
+                            т.д.)
+                        </li>
+                        <li>
+                            <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                            Я обязуюсь НЕ продавать больше франшизу в ваш регион. За вами закрепляется целый регион. Как
+                            правило – это сам город и +-100 км вокруг.
+                        </li>
+                        <li>
+                            <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                            Паушальный взнос от 140 000 р. до 300 000р., в зависимости от региона.
+                        </li>
+                        <li>
+                            <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                            Платежи роялти 5000 р. или 5% от оборота в месяц. Что больше.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <img src="pics/Tilda_Icons_27bu_18 5.svg" alt="">
+                            Вход рубль – выход три. Это важный пункт! Если вы решили купить франшизу, взять
+                            оборудование, научиться всему, объявить клиентам, что в вашем регионе начал работать
+                            Химдиван, а через 1-2 месяца сказать: «Максим, я передумал, химчистка – это не мое. Пойду я
+                            айфоны продавать или автосервис открою», то для этих случаев в договоре предусмотрен штраф –
+                            тройной размер паушального взноса. Если вы боитесь, что бизнес «не попрет» и вас не хватит
+                            сил, то с таким настроением – лучше не начинать бизнес. Если оставлять себе шанс на
+                            «подумать», то человек отступит при первой же сложности. А сложности будут обязательно!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Преимущества франшизы -->
+    <div class="companyAdvantages">
+        <div class="container">
+            <h3 class="my-4"><span>Преимущества</span> старта франшизы<br> с “ХимДиван”</h3>
+            <p class="text-end pb-3">
+                Я подготовил все необходимое для старта. Вот полный список:
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card CardAdvantages">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Оборудование:</h5>
+                            <ol>
+                                <li>1. Профессиональная ковромоечная машина Santoemma Sabrina;</li>
+                                <li>2. Ручная орбитальная машина Cocraft с комплектом падов и щеток</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card CardAdvantages">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Поставщики услуг, чистящих средств и техники:</h5>
+                            <ol>
+                                <li>1. Скидки на технику у определенных поставщиков;</li>
+                                <li>2. Скидки на чистящие средства у определенных поставщиков;</li>
+                                <li>3. Скидки на услуги продвижения сайта, инстаграма, настройки таргетинговой рекламы и
+                                    т.п.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card CardAdvantages">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Нематериальные активы:</h5>
+                            <ol>
+                                <li>1. Сайт;</li>
+                                <li>2. Инстаграмм;</li>
+                                <li>3. Городской номер телефона (ip телефония mango telekom);</li>
+                                <li>4. Сотовый номер телефона (Билайн);</li>
+                                <li>5. Доступ в настроенную версию СРМ системы Bitrix24.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card CardAdvantages">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Обучение:</h5>
+                            <ol>
+                                <li>1. Обучение технологии чистки (мебель, матрасы, ковры и ковролины);</li>
+                                <li>2. Обучение маркетингу (телефонные скрипты: как искать заказы, как работать с
+                                    постоянными клиентами, что делать в конфликтных ситуациях и т.п.);</li>
+                                <li>3. Обучение бухгалтерии (как составить прайс-лист, как считать доходы/расходы, что
+                                    такое
+                                    валовая и чистая прибыль, сколько можно выделять на рекламу и т.п.).</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card CardAdvantages">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Инвентарь, чистящие средства и расходные материалы:</h5>
+                            <ol>
+                                <li>1. Брендированная сумка для переноски химии;</li>
+                                <li>2. Брендированный рюкзак для переноски инвентаря;</li>
+                                <li>3. Комплект моющих средств для основной чистки мебели, ковров и матрасов (4
+                                    позиции);</li>
+                                <li>4. Комплект пятновыводителей (6 позиций);</li>
+                                <li>5. Комплект щеток, перчаток и рукавичек для работы. (5 позиций);</li>
+                                <li>6. Полотенца брендированные для застилания полов.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Действия -->
+    <div class="actions">
+        <div class="container">
+            <div class="row">
+                <div class="howToPay mt-4">
+                    <div class="row">
+                        <!-- col-12 col-md-4-->
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row">
+                                <div class="count me-3 rounded-circle">01</div>
+                                <div class="tetx fst-italic">Позвонить нам<br> и оставить<br> заявку</div>
+                                <div class="arow ms-5"><img src="pics/Arow.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row">
+                                <div class="count me-3 rounded-circle">02</div>
+                                <div class="tetx fst-italic">Мы подготовим договор, и<br> вы оплатите паушальный<br>
+                                    взнос</div>
+                                <div class="arow ms-5"><img src="pics/Arow.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row">
+                                <div class="count me-3 rounded-circle">03</div>
+                                <div class="tetx fst-italic">Приезжаете в Москву<br> для обучения на 1<br> неделю</div>
+                                <div class="tetx fst-italic"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="howToPay mt-4">
+                    <div class="row">
+                        <!-- col-12 col-md-4-->
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row">
+                                <div class="tetx fw-bold" style="color: #F47220;">Поддерживаем вас по любым<br> вопросам
+                                    на
+                                    протяжении<br> всего срока действия договора</div>
+                                <div class="arow ms-5"><img src="pics/ArowLeft.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row">
+                                <div class="count me-3 rounded-circle">04</div>
+                                <div class="tetx fst-italic">Мы подготавливаем сайт,<br> инстаграмм, оборудование и<br>
+                                    чистящие
+                                    средства</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card d-flex flex-row arowCard">
+                                <div class="arow ms-5"><img src="pics/ArowRounded.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- По поводу обучения -->
+    <div class="aboutAducation mt-5">
+        <div class="container">
+            <div class="title fw-bold">
+                Обучение происходит у нас в офисе. Для заключения договора необходимо приехать к нам.
+            </div>
+            <div class="cards">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">У меня в офисе. Я рассказываю как про химчистку мягкой мебели, так и
+                                тонкости маркетинга и бухгалтерии.</div>
+                            <div class="card-title">/01 день</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Нужно сесть в машину к нашему мастеру и покататься по «живым» заказам
+                                и поработать руками «в полях».</div>
+                            <div class="card-title">/2-5 день</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card datCard">
+                            <div class="card-text">Еще один день у меня в офисе. Повторим Технологию химчистки мягкой
+                                мебели и далее ответы на вопросы.</div>
+                            <div class="card-title">/3 день</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <p>
+                        Ведь если услышать информацию – то на следующий день забудешь 80%. <br>
+                        Услышать и поработать, применив знания на практике - запомнишь гораздо больше. <br> <br>
+                        А услышать, применить на практике и еще раз услышать тоже самое – можно запомнить максимальное
+                        количество информации в короткие сроки!
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="fw-bold blueText">
+                        Если Вас заинтересовало наше предложение или<br> у Вас остались вопросы, будем рады ответить на<br> них
+                        по телефону в шапке сайта.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ура футекр -->
+    <div class="footer">
+        <div class="container">
+            <footer class="footer mt-auto py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="logo">
+                                <img src="pics/Логотип.svg" alt="">
+                            </div>
+                            <p>+7 (495) 649-62-46</p>
+                            <p>doc@himdivan.ru для документов</p>
+                            <p>info@himdivan.ru для фото</p>
+                        </div>
+                        <div class="col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li>Химчистка мебели</li>
+                                <li>Химчистка ковровых покрытий</li>
+                                <li>Клининговые услуги</li>
+                                <li>Специальные работы</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Цены</h5>
+                            <ul>
+                                <li>Наше оборудование</li>
+                                <li>Видео</li>
+                                <li>Новости</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Отзывы</h5>
+                            <ul>
+                                <li>Обучение</li>
+                                <li>Франшиза</li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Социальные сети</h5>
+                            <ul class="mediaLinks">
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Вконтакте.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ватс ап.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Ютуб.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="pics/Телеграм.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

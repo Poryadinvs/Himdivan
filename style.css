@@ -109,7 +109,9 @@ li {
 .pricePage .price,
 .cardCurtains .price1,
 .cardCurtains .price2,
-.contactPage span {
+.contactPage span,
+.whyWe .proc,
+.aboutAducation .blueText {
     color: #007198;
 }
 
@@ -124,7 +126,9 @@ li {
 .rewiewsTitle,
 .videoTitle,
 .priceTitle,
-.pricePage .row .title {
+.pricePage .row .title,
+.detailsCards .row:nth-child(2n) .card,
+.franchiseTitle {
     background-color: #daf1f9;
 }
 
@@ -333,7 +337,8 @@ li {
 .datCard,
 .MaksimsCard .card,
 .pricePage .card,
-.details .card {
+.details .card,
+.directorCard .card {
     text-align: left;
     border: 2px solid #007198;
     padding: 15px;
@@ -641,7 +646,6 @@ li {
     text-align: center;
     background-color: #F47220;
     color: white;
-    border-radius: 50%;
     width: 70px;
     height: 70px;
     font-weight: bold;
@@ -670,3 +674,79 @@ li {
     margin-left: auto;
 }
 
+.franchiseTitle {
+    padding: 5px;
+}
+
+.directorCard .col .quote {
+    font-size: 175px;
+}
+
+.mapOfFeanchise img {
+    width: 100%;
+}
+
+.directorCard .card {
+    padding: 25px;
+}
+
+.whyWe img {
+    height: 450px;
+}
+
+.whyWe .proc {
+    font-weight: bold;
+}
+
+.advantages:first-child .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages .colText {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.advantages:first-child .row .col {
+    flex: 1;
+}
+
+.advantages .roundProc {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.advantages .roundProc .proc {
+    position: absolute;
+    top: 60px;
+}
+
+.peculiarities .card-text span{
+    color: #F47220;
+    font-size: 30px;
+}
+
+.peculiarities .card-text{
+    font-size: 18px;
+}
+
+.companyAdvantages .card{
+    height: 250px;
+}
+
+.actions .container .row{
+    position: relative;
+}
+
+.actions .arowCard{
+    position: absolute;
+    bottom: 30px;
+    left: 870px;
+}
+
+.aboutAducation .blueText{
+
+}
