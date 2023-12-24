@@ -724,29 +724,261 @@ li {
     top: 60px;
 }
 
-.peculiarities .card-text span{
+.peculiarities .card-text span {
     color: #F47220;
     font-size: 30px;
 }
 
-.peculiarities .card-text{
+.peculiarities .card-text {
     font-size: 18px;
 }
 
-.companyAdvantages .card{
+.companyAdvantages .card {
     height: 250px;
 }
 
-.actions .container .row{
+.actions .container .row {
     position: relative;
 }
 
-.actions .arowCard{
+.actions .arowCard {
     position: absolute;
     bottom: 30px;
     left: 870px;
 }
 
-.aboutAducation .blueText{
+@media screen and (max-width: 1024px) {
 
+    .proceInfo .text-over-cards {
+        font-size: 30px;
+    }
+
+    .Advantages .card {
+        height: 200px;
+    }
+
+    .proceInfo .PriceTopCard {
+        font-size: 13px;
+        margin-top: 6vh;
+    }
+
+    .СardServices .card-body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .СardServices .mr-3 {
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .countPrice .row {
+        margin-left: 45px;
+    }
+
+    .countPrice .row {
+        justify-content: space-between;
+    }
+
+    .EducationForCleaning .cleanPic img {
+        width: 450px;
+    }
+
+    .aboutTaras .card-img-top img {
+        width: 100%;
+    }
+
+    .invitation .schedulesTitle {
+        margin-left: 250px;
+    }
+
+    .howToPay .tetx {
+        font-size: 15px;
+    }
+
+    .howToPay .row {
+        gap: 45px;
+    }
+
+    .howToPay .count {
+        height: 65px;
+    }
+
+    .advantages .cards .card {
+        height: 150px;
+    }
+
+    .companyAdvantages .CardAdvantages {
+        height: 350px;
+    }
+
+    .actions .card .tetx {
+        font-size: 13px;
+    }
+
+    .actions .arowCard {
+        bottom: 110px;
+        left: 650px;
+    }
+
+    .aboutAducation .cards .card {
+        height: 150px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    .proceInfo {
+        text-align: center;
+    }
+
+    .Advantages .card {
+        height: 300px;
+    }
+
+    .text-over-cards {
+        margin-bottom: 20px;
+    }
+
+    .proceInfo .PriceTopCard {
+        font-size: 25px;
+        margin-top: 25vh;
+    }
+
+    .proceInfo .card-title {
+        font-size: 35px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .proceInfo .btn {
+        margin-top: 20px;
+    }
+
+
+    .СardServices .card-body {
+        flex-direction: row;
+    }
+
+    .countPrice .choosePrice {
+        width: 100px;
+    }
+
+    .countPrice .Material {
+        margin-top: 22px;
+    }
+
+    .pricePage .col {
+        font-size: 14px;
+    }
+
+    .pricePage .cardSoft .types {
+        margin-right: 40px;
+    }
+
+    .ourEquipment .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .ourEquipment .card {
+        width: 300px;
+        height: 670px;
+        overflow: hidden scroll;
+
+    }
+
+    .ourChemicals .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .ourChemicals .EquipmentCard {
+        width: 180px;
+        height: 700px;
+        overflow: hidden scroll;
+    }
+
+    .invitation .schedulesTitle {
+        margin-left: 180px;
+    }
+
+    .EducationForCleaning .cleanPic img {
+        width: 100%
+    }
+
+    .howToPay .row {
+        gap: 70px;
+    }
+
+    .howToPay .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .howToPay .col-12 {
+        flex-basis: calc(50% - 15px);
+    }
+
+    .howToPay .col-12:last-child {
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+
+    .details .detailsCards .card {
+        width: 500px;
+    }
+
+    .advantages .cards .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .advantages .cards .col-md-4 {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .companyAdvantages .CardAdvantages {
+        height: 400px;
+        overflow: hidden scroll;
+    }
+
+    .aboutAducation .cards .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .aboutAducation .cards .col {
+        flex: 0 0 48%;
+        margin-bottom: 1%;
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 427px) {
+
+    .EducationForCleaning .cleanPic img {
+        width: 350px;
+    }
+
+    .invitation .schedulesTitle {
+        margin-left: 100px;
+    }
+
+    .MaksimsCard .MaximsPic img{
+        height: 160px;
+    }
+
+    .details .detailsCards .card {
+        width: 350px;
+    }
 }
