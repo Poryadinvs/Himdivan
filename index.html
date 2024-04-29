@@ -10,10 +10,113 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
   <title>Химдиван</title>
 </head>
 
 <body>
+  <!-- Модальное окно для услуг -->
+  <div id="serviceModal" class="modalServ">
+    <div class="modal-content-serv">
+      <span class="close-serv">&times;</span>
+      <div class="modal-body-serv">
+        <img id="service-img" src="" alt="">
+        <p id="service-description"></p>
+        <iframe id="service-video" src="" title="Service Video" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно калькулятор -->
+  <div id="calcModal" class="calcModal">
+    <div class="container calc" style="padding-top: 25px;">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card-title">Тип изделия</div>
+          <div class="dropdown choosePrice">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выбрать
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Изделие 1</a></li>
+              <li><a class="dropdown-item" href="#">Изделие 2</a></li>
+              <li><a class="dropdown-item" href="#">Изделие 3</a></li>
+              <li><a class="dropdown-item" href="#">Изделие 4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card-title">Материал</div>
+          <div class="dropdown choosePrice Material">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выбрать
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Материал 1</a></li>
+              <li><a class="dropdown-item" href="#">Материал 2</a></li>
+              <li><a class="dropdown-item" href="#">Материал 3</a></li>
+              <li><a class="dropdown-item" href="#">Материал 4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card-title">Доа. услуги</div>
+          <div class="dropdown choosePrice">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Выбрать
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Услуга 1</a></li>
+              <li><a class="dropdown-item" href="#">Услуга 2</a></li>
+              <li><a class="dropdown-item" href="#">Услуга 3</a></li>
+              <li><a class="dropdown-item" href="#">Услуга 4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card-title">Доп. услуги</div>
+          <div class="quantity_inner">
+            <button class="bt_minus">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <button class="bt_plus">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row secRow">
+        <div class="col-md-2">
+          <div class="card-title">Выезд за МКАД, км:
+            <span class="value">0</span>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="0" class="slider">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="card-title">Скидка, %</div>
+          <div class="quantity_inner">
+            <button class="bt_minus">
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <button class="bt_plus">
+              <svg viewBox="0 0 24 24">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Навбар -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -168,7 +271,7 @@
             Профессиональная <span>химчистка</span> мебели
             и <span>клининговые услуги</span> по доступным ценам
           </p>
-          <button class="btn">Расчитать стоимость</button>
+          <button class="btn calcBtn">Расчитать стоимость</button>
         </div>
 
         <div class="col-md-6">
@@ -269,7 +372,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Химчистка мягкой мебели</h5>
               <p class="card-text PricePopular">2 100 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -279,7 +382,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Химчистка матрасов</h5>
               <p class="card-text PricePopular">500 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -289,7 +392,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Химчистка штор</h5>
               <p class="card-text PricePopular">50 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -299,7 +402,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Химчистка ковров</h5>
               <p class="card-text PricePopular">750 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -309,7 +412,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Химчистка ковролинов</h5>
               <p class="card-text PricePopular">5000 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -319,7 +422,7 @@
             <div class="card-body text-center">
               <h5 class="card-title">Генеральная уборка</h5>
               <p class="card-text PricePopular">2 600 руб.</p>
-              <button class="btn" type="button">Подробнее</button>
+              <button class="btn" id="servBtn" type="button">Подробнее</button>
             </div>
           </div>
         </div>
@@ -726,7 +829,9 @@
         </div>
       </div>
     </div>
-    <button class="btn" type="button">Все нововсти</button>
+    <a href="news.html">
+      <button class="btn" type="button">Все нововсти</button>
+    </a>
   </div>
   <!-- Подробности о работе -->
   <div class="JobDetails">
