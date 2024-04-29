@@ -372,6 +372,7 @@ li {
 
 .EquipmentCard {
     height: 550px;
+    overflow: hidden scroll;
 }
 
 .companies {
@@ -747,6 +748,168 @@ li {
     left: 870px;
 }
 
+.modalEui,
+.modalServ,
+.calcModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 4px solid #007198;
+    width: 550px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.modal-body {
+    text-align: left;
+    overflow: hidden scroll;
+}
+
+
+.modalServ iframe{
+    width: 450px;
+    height: 350px;
+}
+
+.modal-content-serv {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    height: 650px;
+    overflow: hidden scroll;
+}
+
+.close-serv {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-serv:hover,
+.close-serv:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body-serv {
+    text-align: left;
+}
+
+#service-img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#service-video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.newsPage .container .row .card {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.newsPage .container .row .card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.rewiewsPage .container .row{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.rewiewsPage .container .row.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contactPage .container .details .detailsCards .ContectW{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contactPage .container .details .detailsCards .ContectW.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contactPage .container .details .detailsCards .ContactB{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contactPage .container .details .detailsCards .ContactB.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pricePage .container .container .tab-content .tab-pane .stripOne{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pricePage .container .container .tab-content .tab-pane .stripOne.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.pricePage .container .container .tab-content .tab-pane .stripTwo{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pricePage .container .container .tab-content .tab-pane .stripTwo.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 @media screen and (max-width: 1024px) {
 
     .proceInfo .text-over-cards {
@@ -974,7 +1137,7 @@ li {
         margin-left: 100px;
     }
 
-    .MaksimsCard .MaximsPic img{
+    .MaksimsCard .MaximsPic img {
         height: 160px;
     }
 
